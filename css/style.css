@@ -41,6 +41,13 @@ body {
     word-wrap: break-word;
 }
 
+#video-top{
+margin-top: 100px;
+}
+#video-top video {
+    width: 100%;
+    height: auto;
+}
 body {
     font-family: 'Outfit', sans-serif;
     font-size: 15px;
@@ -1363,8 +1370,8 @@ ul.team-info-social li {
     line-height: 1em;
     font-weight: 700;
     font-family: 'Oswald', sans-serif;
-    color: transparent;
-    -webkit-text-stroke: 1px #fff;
+    color: #fff;
+    -webkit-text-stroke: 1px #fff;;
     opacity: .9;
 }
 .price-box .price-box-inner ul li.pricing-prices .pricing-price {
@@ -2369,6 +2376,7 @@ ul.team-info-social li {
 
 
 
+
 /* ======= Media Query ======= */
 @media (max-width: 390px) {
     .pozo-form-wrapper {
@@ -2514,3 +2522,95 @@ ul.team-info-social li {
         max-width: 1140px !important;
     }
 }
+
+
+/* 
+testimonial css */
+
+.testimonial {
+    border-right: 4px solid #9c5451;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 30px 30px 130px;
+    margin: 0 15px 30px 15px;
+    overflow: hidden;
+    position: relative;
+  }
+  .testimonial:before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: -17px;
+    border-top: 25px solid #9c5451;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    transform: rotate(45deg);
+  }
+  .testimonial:after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -17px;
+    border-top: 25px solid #9c5451;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    transform: rotate(135deg);
+  }
+  .testimonial .pic {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+  }
+  .testimonial .pic img {
+    width: 100%;
+    height: auto;
+  }
+  .testimonial .description {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #6f6f6f;
+    line-height: 25px;
+    margin-bottom: 15px;
+  }
+  .testimonial .title {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #9c5451;
+    margin: 0;
+  }
+  .testimonial .post {
+    display: inline-block;
+    font-size: 17px;
+    color: #9c5451;
+    font-style: italic;
+  }
+  .owl-theme .owl-controls .owl-page span {
+    border: 2px solid #2a3d7d;
+    background: #fff !important;
+    border-radius: 0 !important;
+    opacity: 1;
+  }
+  .owl-theme .owl-controls .owl-page.active span,
+  .owl-theme .owl-controls .owl-page:hover span {
+    background: #9c5451 !important;
+    border-color: #9c5451;
+  }
+  @media only screen and (max-width: 767px) {
+    .testimonial {
+      padding: 20px;
+      text-align: center;
+    }
+    .testimonial .pic {
+      display: block;
+      position: static;
+      margin: 0 auto 15px;
+    }
+  }
+  
